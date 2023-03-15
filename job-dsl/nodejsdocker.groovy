@@ -16,7 +16,7 @@ job('C1-NodeJS Docker example') {
         dockerBuildAndPublish {
             repositoryName('iamharryindoc/nodejsjenkins')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('dockerhub')
+            registryCredentials('iamharryindoc')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
